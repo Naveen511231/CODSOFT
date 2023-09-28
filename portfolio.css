@@ -1,21 +1,22 @@
 body {
-    background-color: white;
+    background-color: black;
     margin: 0px;
+    color:rgb(165, 31, 31);
 }
 /* navbar */
 #navigation_bar {
-    background-color: white;
+    background-color:black;
     display: flex;
     justify-content: space-between;
     padding-left: 1%;
     padding-right: 1%;
-    box-shadow: 0px 0px 10px 7px gray;
+    box-shadow: 0px 0px 15px 0px rgb(237, 237, 130); 
     flex-direction: row;
     height: 5rem;
     width: 100%;
     position: fixed;
     margin-top: 0%;
-    z-index: 1;
+    z-index:1;
 }
 
 #button {
@@ -28,6 +29,7 @@ body {
     margin: 12% 6% 6% 6%;
     font-size: 1rem;
     text-decoration: underline;
+    font-weight:900;
 }
 
 .button:hover {
@@ -50,6 +52,9 @@ body {
 #icon {
     display: none;
 }
+#icon:hover{
+    cursor: pointer;
+}
 
 /* image and image  */
 #intro {
@@ -64,7 +69,7 @@ body {
 }
 .paragraph {
     font-size: 1rem;
-
+   color:rgb(242, 234, 197) ;
 }
 
 #name {
@@ -74,6 +79,7 @@ body {
 
 #caption {
     font: size 1.2em;
+    color: rgb(242, 234, 197);
 }
 
 #social_media_division {
@@ -89,6 +95,9 @@ body {
 .social_media_link {
     margin: 3%;
 }
+.social_media_link img:hover{
+    height:5vw;
+}
 
 #myimage {
     margin: 3% 3% 3% 3%;
@@ -101,6 +110,7 @@ body {
 }
 
 /* detail section  */
+
 .section {
     font-size: large;
     font-weight: bolder;
@@ -108,7 +118,7 @@ body {
 }
 
 .parasection {
-    box-shadow: 0px 5px 7px 0px gray;
+    box-shadow: 0px 5px 15px -9px rgb(237, 237, 130);
     margin: 0%;
     padding-left: 1%;
     padding-top: 1%;
@@ -133,11 +143,21 @@ margin-top: 1%;
 #flip_resume_containt img{
     margin: 1% 28% 1% 28%;
     border-radius: 10px;
-    box-shadow: 0px 0px 10px 10px gray;
+    /* box-shadow: 0px 0px 10px 4px rgb(237, 237, 130); */
     width:50vw;
+
 }
 #flip_resume_containt{
 display: none;
+flex-direction: column;
+align-items: center;
+}
+#flip_resume_containt button{
+    width: fit-content;
+ padding: 1%;
+ border-radius: 5px;
+ background-color: rgb(36, 36, 242);
+ font-weight: 500;
 }
 /* skill  */
 #flip_skill_containt{
@@ -147,9 +167,10 @@ display: none;
     justify-content: space-between;
 }
 #flip_skill_containt img{
-    margin: 1%;
+    margin: 3%;
     border-radius: 10px;
-    box-shadow: 0px 0px 10px 10px gray;
+    box-shadow: 0px 0px 10px 0px rgb(237, 237, 130);
+    height:5rem;
 }
 
 /* project  */
@@ -191,10 +212,9 @@ h2{
 
     #icon {
         display: block;
-        margin-top: 3%;
-        margin-bottom: 5%;
+        margin: 3% 3% 3% 3%;
     }
-
+   
     #button_for_media {
         color: white;
         display: flex;
@@ -221,5 +241,8 @@ h2{
     }
     #myimage{
         margin:15%;
+    }
+    .social_media_link img {
+        height:5vw
     }
 }
